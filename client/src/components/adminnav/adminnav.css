@@ -1,0 +1,76 @@
+.admin__nav {
+  background-color: var(--main-color);
+  height: 55px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.admin__nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.admin__nav__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.admin__nav__container h1 {
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  margin-right: 3rem;
+}
+.admin__nav__container p {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.admin__navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin__navlinks__addproduct {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: white;
+  padding: 5px 25px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-left: 1.5em;
+}
+.admin__navlinks__orders {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.admin__navlinks__orders:hover {
+  border-bottom: 2px solid white;
+}
+
+.admin__navlinks__admin {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: white;
+  margin-left: 1.5em;
+}
+
+.admin__navlinks__admin:hover {
+  border-bottom: 2px solid white;
+}

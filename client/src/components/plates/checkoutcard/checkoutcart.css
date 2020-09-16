@@ -1,0 +1,126 @@
+.cart {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__item {
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 70px;
+  grid-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.cart__item__content {
+  justify-self: self-start;
+  overflow: hidden;
+}
+
+.cart__title {
+  width: 250px;
+  margin: 0 0 15px 0;
+  color: var(--text-color);
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgb(165, 165, 165);
+}
+.cart__item__name {
+  color: var(--text-color);
+  max-width: 135px;
+  font-size: 0.9rem;
+  margin: 0 0 5px 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.cart__item__price {
+  color: grey;
+  font-size: 13px;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.cart__item__qty {
+  color: var(--text-color);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.cart__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.item__remove__btn {
+  background-color: white;
+  font-size: 16px;
+  width: 28px;
+  height: 28px;
+  color: #3addda;
+  border-radius: 50%;
+  border: 2px solid #3addda;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.item__count__btn {
+  background-color: var(--secondary-color);
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.cart__total {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cart__Payment {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  margin: 15px 0 10px 0;
+  padding: 0;
+}
+
+.cart__confirm {
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  justify-self: center;
+}
+
+#Payment {
+  border: 1px solid #3addda;
+  border-radius: 4px;
+  height: 30px;
+  color: var(--text-color);
+}
+
+.cart__confirm {
+  font-size: 16px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}

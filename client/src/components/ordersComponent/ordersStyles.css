@@ -1,0 +1,41 @@
+.orders {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  width: 90vw;
+}
+
+.orders thead tr {
+  color: grey;
+  text-align: left;
+  font-weight: bold;
+}
+
+.orders th,
+.orders td {
+  padding: 12px 15px;
+}
+
+.orders tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.orders tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+#deliveryStatus {
+  color: white;
+
+  border: none;
+  border-radius: 0.9em;
+  background-color: #fe5f55;
+  padding: 3px 10px;
+  text-align: center;
+}
+
+#deliveryStatus option {
+  background-color: #f3f3f3;
+  color: black;
+}

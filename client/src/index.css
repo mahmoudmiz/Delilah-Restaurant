@@ -1,0 +1,41 @@
+:root {
+  --main-color: #3addda;
+  --secondary-color: #fc885c;
+  --text-color: #3f3d56;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(250, 250, 250);
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainNav {
+  background-color: #3addda;
+  color: white;
+  margin-bottom: 1em;
+  font-size: 30px;
+  font-weight: 700;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

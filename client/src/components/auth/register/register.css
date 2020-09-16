@@ -1,0 +1,32 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#registerForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+}
+
+input {
+  min-height: 35px;
+  margin-bottom: 1em;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.registerForm__btn {
+  margin: 2rem 0 2rem 0;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  border: none;
+  height: 40px;
+  background-color: #fc885c;
+  cursor: pointer;
+}
