@@ -3,7 +3,7 @@ import { withRouter, Link, Redirect } from "react-router-dom";
 import isLogedIn from "../../../helpers/isLogedIn";
 
 import "./register.css";
-
+const PORT = process.env.PORT || 8080;
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +24,7 @@ class Register extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://127.0.0.1:8080/users/signup", {
+    fetch(`/${PORT}/users/signup`, {
       method: "post",
       headers: {
         Accept: "application/json, text/plain, */*",
