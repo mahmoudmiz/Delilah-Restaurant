@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./checkoutcart.css";
 const Checkoutcard = (props) => {
   let total = 0;
@@ -8,7 +9,7 @@ const Checkoutcard = (props) => {
     countItems += i.qty;
   }
   return (
-    <div className="cart">
+    <div id="cart" className="cart">
       <h2 className="cart__title">
         you have {countItems > 1 ? countItems + " items" : "1 item"} in your
         cart
@@ -24,23 +25,21 @@ const Checkoutcard = (props) => {
             </p>
           </div>
 
-          <div className="cart__item__btns">
-            {qty > 1 ? (
-              <button
-                onClick={() => props.handleReduceCount(id)}
-                className="item__count__btn"
-              >
-                -
-              </button>
-            ) : (
-              <button
-                onClick={(e) => props.handleDeleteCartItems(id)}
-                className="item__remove__btn"
-              >
-                x
-              </button>
-            )}
-          </div>
+          {qty > 1 ? (
+            <button
+              onClick={() => props.handleReduceCount(id)}
+              className="item__count__btn"
+            >
+              -
+            </button>
+          ) : (
+            <button
+              onClick={(e) => props.handleDeleteCartItems(id)}
+              className="item__remove__btn"
+            >
+              x
+            </button>
+          )}
         </div>
       ))}
       <h5 className="cart__total">

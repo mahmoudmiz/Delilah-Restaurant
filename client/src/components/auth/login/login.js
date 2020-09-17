@@ -35,7 +35,7 @@ class Login extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://127.0.0.1:8080/users/signin", {
+    fetch("/users/signin", {
       method: "post",
       headers: {
         Accept: "application/json",

@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 function PlateItem({ id, name, price, img, added, updateCheckOut }) {
   return (
@@ -8,9 +9,12 @@ function PlateItem({ id, name, price, img, added, updateCheckOut }) {
         <h1>{name}</h1>
         <p>${price}</p>
       </div>
-      <button onClick={() => updateCheckOut(id)} className="plate__add__btn">
-        +
-      </button>
+
+      <Link smooth to="/#cart">
+        <button onClick={() => updateCheckOut(id)} className="plate__add__btn">
+          +
+        </button>
+      </Link>
     </div>
   );
 }

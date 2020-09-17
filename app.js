@@ -20,7 +20,7 @@ db.authenticate()
     console.log(error.message);
   });
 
-db.sync({ force: true });
+//db.sync({ force: true });
 
 // user routes
 app.use("/users", userRoutes);
