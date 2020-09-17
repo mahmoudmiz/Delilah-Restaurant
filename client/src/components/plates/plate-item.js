@@ -10,7 +10,7 @@ function PlateItem({ id, name, price, img, added, updateCheckOut }) {
         <p>${price}</p>
       </div>
 
-      <Link smooth to="/#cart">
+      <Link className="plate__add__hashlink" smooth to="/#cart">
         <button onClick={() => updateCheckOut(id)} className="plate__add__btn">
           +
         </button>

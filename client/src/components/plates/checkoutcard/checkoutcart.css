@@ -149,11 +149,11 @@
     padding: 10px;
   }
 
-  .item__count__btn {
+  .item__remove__btn {
     justify-self: center;
   }
 
-  .item__remove__btn {
+  .plate__add__hashlink {
     justify-self: center;
   }
 }
