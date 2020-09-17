@@ -153,6 +153,10 @@
     justify-self: center;
   }
 
+  .item__count__btn {
+    justify-self: center;
+  }
+
   .plate__add__hashlink {
     justify-self: center;
   }
