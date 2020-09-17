@@ -4,7 +4,6 @@ const jwt = require("jsonwebtoken");
 const userServices = require("./../../utils/users-service");
 const adminAuth = require("./../middleware/admin-auth");
 const User = require("../../models/User");
-require("dotenv").config();
 
 // signup new user
 router.post("/signup", async (req, res, next) => {
