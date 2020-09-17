@@ -145,7 +145,7 @@ class PlatesList extends React.Component {
     };
     console.log(payLoad.payment_method);
     console.log(JSON.stringify(payLoad));
-    fetch("http://127.0.0.1:8080/orders", {
+    fetch("/orders", {
       method: "post",
       headers: {
         Accept: "application/json, text/plain, */*",
