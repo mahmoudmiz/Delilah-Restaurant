@@ -152,7 +152,7 @@ class PlatesList extends React.Component {
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
-        Authorization: "Bearer " + token,
+        Authorization: "Bearer" + " " + token,
       },
       body: JSON.stringify(payLoad),
     })
