@@ -33,9 +33,13 @@ router.post("/signin", async (req, res) => {
     if (user) {
       const match = await userServices.checkUserPassword(req, user);
       if (match) {
-        const token = jwt.sign({ id: user.id, email: user.email }, "super", {
-          expiresIn: "1h",
-        });
+        const token = jwt.sign(
+          { id: user.id, email: user.email },
+          process.env.JWT_KEY,
+          {
+            expiresIn: "1h",
+          }
+        );
         res.status(200).json({
           message: "Auth successful",
           token,
