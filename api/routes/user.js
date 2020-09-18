@@ -36,7 +36,7 @@ router.post("/signin", async (req, res) => {
         const token = jwt.sign(
           { id: user.id, email: user.email },
           process.env.JWT_KEY,
-          { expiresIn: "1h" }
+          { algorithm: "RS256", expiresIn: "1h" }
         );
         res.status(200).json({
           message: "Auth successful",
