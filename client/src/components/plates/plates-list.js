@@ -150,7 +150,8 @@ class PlatesList extends React.Component {
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
-        Authorization: "Bearer " + `${localStorage.getItem("token")}`,
+        Authorization:
+          "Bearer " + JSON.parse(`${localStorage.getItem("token")}`),
       },
       body: JSON.stringify(payLoad),
     })
