@@ -1,4 +1,6 @@
 const Sequelize = require("sequelize");
+console.log(process.env.JWT_KEY);
+console.log(process.env.DATABASE_URL);
 
 // connecting to the database
 module.exports = new Sequelize(
