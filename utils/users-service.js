@@ -53,7 +53,7 @@ module.exports = {
   identifyUser: async (req) => {
     if (req.headers.authorization !== undefined) {
       const token = req.headers.authorization.split(" ")[1];
-      const decoded = jwt.verify(token, process.env.jwt_key);
+      const decoded = jwt.verify(token, process.env.JWT_KEY);
       return decoded;
     } else {
       throw new Error(" Auth failed");

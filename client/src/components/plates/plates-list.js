@@ -144,15 +144,12 @@ class PlatesList extends React.Component {
       payment_method: this.state.dropDownValue || "cash",
     };
 
-    const token = localStorage.getItem("token");
-    console.log(typeof token);
-
     fetch("/orders", {
       method: "post",
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
-        Authorization: "Bearer" + " " + token,
+        Authorization: "Bearer " + localStorage.getItem("token"),
       },
       body: JSON.stringify(payLoad),
     })
